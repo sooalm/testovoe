@@ -1,0 +1,139 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.8rem;
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0rem auto;
+}
+
+.mainImage {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.mainImage img {
+  border: 1px solid #ededed;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.thumbnail:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.active {
+  opacity: 1;
+  outline: 2px solid #0070f3;
+}
+.title {
+  margin: 1rem auto;
+
+  /* width: 250px; */
+  height: 20px;
+
+  font-size: 1.1rem;
+  color: #9f4242;
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+.flexRow {
+  align-self: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+
+  /* border: 1px solid red; */
+}
+.flexRowGap {
+  align-self: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 1rem;
+}
+.shareBtn {
+  width: 25px;
+  height: 25px;
+  align-self: center;
+}
+
+.shareBtn:hover {
+  color: skyblue;
+}
+
+@media (max-width: 1440px) {
+  .carousel {
+    gap: 0.4rem;
+    max-width: 400px;
+    margin: 0rem auto;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .mainImage {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  .thumbnails {
+    align-self: start;
+    gap: 0.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .carousel {
+    gap: 0.2rem;
+    max-width: 300px;
+    margin: 0rem auto;
+
+    transition: all 0.3s ease-in-out;
+  }
+  .mainImage {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  .thumbnails {
+    gap: 0.5rem;
+  }
+
+  .thumbnail {
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,16 @@
+.catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+@media (max-width: 768) {
+  .catalog {
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}

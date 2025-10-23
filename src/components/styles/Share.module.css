@@ -1,0 +1,66 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 1, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+.modal {
+  margin-top: 10rem;
+  background-color: rgb(235, 214, 214);
+  height: 400px;
+  width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.modal__close {
+  position: absolute;
+
+  /* float: left; */
+  top: 1rem;
+  left: 85%;
+
+  padding: 0.5rem 1rem;
+  background-color: rgb(176, 64, 87);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.shareLink {
+  /* margin-top: 2rem;
+  margin-left: 3rem; */
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+}
+.modal__title {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  color: rgb(76, 29, 29);
+}
+.qrCode {
+  align-self: center;
+}
+.copy {
+  width: 25px;
+  height: 25px;
+}
+.copy:hover {
+  color: skyblue;
+}
+.copied {
+  color: green;
+}
