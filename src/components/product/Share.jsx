@@ -29,11 +29,10 @@ const Share = ({ product, setIsOpen, isOpen }) => {
         </button>
 
         <img className={styles.qrCode} src={product.meta.qrCode}></img>
-        <div>
-          <div className={styles.shareLink}>
-            <p>{window.location.href}</p>
-            <FaCopy onClick={handleShare} className={styles.copy} />
-          </div>
+
+        <div className={styles.shareLink}>
+          <p>{window.location.href}</p>
+          <FaCopy onClick={handleShare} className={styles.copy} />
         </div>
       </div>
     </div>,
